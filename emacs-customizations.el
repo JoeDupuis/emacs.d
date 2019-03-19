@@ -40,10 +40,11 @@
  '(package-archive-priorities (quote (("elpa" . 5) ("melpa" . 3))))
  '(package-selected-packages
    (quote
-    (ag monokai-alt-theme monokai-theme use-package magit color-theme-sanityinc-tomorrow)))
+    (flycheck yaml-mode rails-log-mode projectile-rails projectile highlight-indentation wgrep-ag goto-chg magit-gitflow buffer-move ag monokai-alt-theme monokai-theme use-package magit color-theme-sanityinc-tomorrow)))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
  '(scroll-bar-mode nil)
+ '(show-paren-mode t)
  '(size-indication-mode t)
  '(tool-bar-mode nil)
  '(tooltip-mode nil)
