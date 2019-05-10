@@ -79,7 +79,7 @@
   :ensure t
   :init
 					;  (setq projectile-completion-system 'ivy)
-  (setq projectile-project-search-path '("~/Documents/"))
+;  (setq projectile-project-search-path '("~/Documents/"))
 
   :config
   (use-package projectile-rails :ensure t)
