@@ -10,7 +10,7 @@
 (add-to-list 'package-archives
 '("melpa" . "https://melpa.org/packages/") t)
 
-
+; (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 
 
 ;; Set up 'custom' system
@@ -33,7 +33,7 @@
 ;; (exec-path-from-shell-initialize)
 ;; (exec-path-from-shell-copy-env "XDG_CONFIG_HOME")
 ;; (exec-path-from-shell-copy-env "XDG_DATA_HOME")
-
+(use-package nix-mode :ensure t :defer t)
 (use-package magit :ensure t :defer t :bind ("C-x g" . magit))
 (use-package magit-gitflow  :ensure t :hook  (magit-mode . turn-on-magit-gitflow))
 (use-package color-theme-sanityinc-tomorrow :defer t :ensure t)
@@ -63,6 +63,9 @@
 (use-package goto-chg :ensure t :bind
 ("C-." . goto-last-change)
 ("C-," . goto-last-change-reverse))
+
+
+(use-package js2-mode :defer t :ensure t)
 
 (use-package highlight-indentation :ensure t :defer t)
 (use-package php-mode :ensure t :defer t)
@@ -229,3 +232,5 @@
         (message "File '%s' successfully removed" filename)))))
 
 (global-set-key (kbd "C-x C-k") 'delete-current-buffer-file)
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)

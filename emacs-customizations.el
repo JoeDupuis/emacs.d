@@ -15,8 +15,8 @@
  '(company-backends
    (quote
     (company-bbdb company-eclim company-semantic company-clang company-xcode company-cmake company-capf company-files
-		  (company-dabbrev-code company-gtags company-etags company-keywords)
-		  company-oddmuse company-dabbrev company-css)))
+                  (company-dabbrev-code company-gtags company-etags company-keywords)
+                  company-oddmuse company-dabbrev company-css)))
  '(compilation-message-face (quote default))
  '(custom-enabled-themes (quote (monokai-alt)))
  '(custom-safe-themes
@@ -46,14 +46,16 @@
  '(package-archive-priorities (quote (("gnu" . 5) ("melpa" . 3))))
  '(package-selected-packages
    (quote
-    (ledger-mode php-mode company web-mode exec-path-from-shell restclient minitest ruby-end electric-pair flx-ido markdown-mode csharp-mode flycheck yaml-mode rails-log-mode projectile-rails projectile highlight-indentation wgrep-ag goto-chg magit-gitflow buffer-move ag monokai-alt-theme monokai-theme use-package magit color-theme-sanityinc-tomorrow)))
+    (nix-mode js2-mode ledger-mode php-mode company web-mode exec-path-from-shell restclient minitest ruby-end electric-pair flx-ido markdown-mode csharp-mode flycheck yaml-mode rails-log-mode projectile-rails projectile highlight-indentation wgrep-ag goto-chg magit-gitflow buffer-move ag monokai-alt-theme monokai-theme use-package magit color-theme-sanityinc-tomorrow)))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(size-indication-mode t)
+ '(tab-width 2)
  '(tool-bar-mode nil)
  '(tooltip-mode nil)
+ '(truncate-lines t)
  '(use-dialog-box nil)
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
@@ -78,6 +80,7 @@
      (360 . "#b5bd68"))))
  '(vc-annotate-very-old-color nil)
  '(web-mode-auto-close-style 1)
+ '(web-mode-markup-indent-offset 2)
  '(weechat-color-list
    (quote
     (unspecified "#272822" "#3C3D37" "#F70057" "#F92672" "#86C30D" "#A6E22E" "#BEB244" "#E6DB74" "#40CAE4" "#66D9EF" "#FB35EA" "#FD5FF0" "#74DBCD" "#A1EFE4" "#F8F8F2" "#F8F8F0"))))
