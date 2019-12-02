@@ -31,6 +31,10 @@
 )
 
 (use-package pdf-tools :ensure t)
+(use-package dired-rsync :ensure t
+  :config
+  (bind-key "C-c C-r" 'dired-rsync dired-mode-map))
+
 ;; (exec-path-from-shell-initialize)
 ;; (exec-path-from-shell-copy-env "XDG_CONFIG_HOME")
 ;; (exec-path-from-shell-copy-env "XDG_DATA_HOME")
