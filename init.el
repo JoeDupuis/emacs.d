@@ -13,6 +13,14 @@
 ; (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 
 
+(when (eq system-type 'darwin)
+  (setq
+   ns-command-modifier 'control
+   ns-option-modifier 'meta
+   ns-control-modifier 'super
+   ns-function-modifier 'hyper))
+
+
 ;; Set up 'custom' system
 (setq custom-file "~/.emacs.d/emacs-customizations.el")
 (load custom-file)
