@@ -140,7 +140,7 @@
 (use-package rails-log-mode :ensure t :defer t)
 (use-package yaml-mode :ensure t :defer t :mode "\\.sls\\'")
 (use-package flycheck :ensure t :defer t)
-(use-package goto-gem :ensure t :defer t)
+;(use-package goto-gem :ensure t :defer t)
 (use-package windmove
   ;; :defer 4
   :config
