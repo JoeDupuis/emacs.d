@@ -88,6 +88,7 @@
 
 
 (use-package js2-mode :defer t :ensure t)
+(use-package terraform-mode :defer t :ensure t)
 
 (use-package highlight-indentation :ensure t :defer t)
 (use-package php-mode :ensure t :defer t)
