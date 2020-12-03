@@ -38,6 +38,7 @@
 		 ("#A75B00" . 70)
 		 ("#F309DF" . 85)
 		 ("#3C3D37" . 100)))
+ '(js-indent-level 2)
  '(magit-diff-use-overlays nil)
  '(magit-gitflow-release-finish-arguments '("--push"))
  '(menu-bar-mode nil)
