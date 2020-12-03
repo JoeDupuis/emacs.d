@@ -37,6 +37,7 @@
 (use-package exec-path-from-shell :ensure t
 
 )
+(use-package fish-mode :ensure t)
 
 (use-package pdf-tools :ensure t)
 (use-package dired-rsync :ensure t
