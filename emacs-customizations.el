@@ -45,7 +45,7 @@
  '(minitest-use-rails t)
  '(package-archive-priorities '(("gnu" . 5) ("melpa" . 3)))
  '(package-selected-packages
-	 '(goto-gem dtrt-indent aggressive-indent smart-tabs-mode company-tabnine company-nixos-options pdf-tools dired-rsync nix-mode js2-mode ledger-mode php-mode company web-mode exec-path-from-shell restclient minitest ruby-end electric-pair flx-ido markdown-mode csharp-mode flycheck yaml-mode rails-log-mode projectile-rails projectile highlight-indentation wgrep-ag goto-chg magit-gitflow buffer-move ag monokai-alt-theme monokai-theme use-package magit color-theme-sanityinc-tomorrow))
+	 '(fish-mode tide nix-buffer go-mode terraform-mode rjsx-mode goto-gem dtrt-indent aggressive-indent smart-tabs-mode company-tabnine company-nixos-options pdf-tools dired-rsync nix-mode js2-mode ledger-mode php-mode company web-mode exec-path-from-shell restclient minitest ruby-end electric-pair flx-ido markdown-mode csharp-mode flycheck yaml-mode rails-log-mode projectile-rails projectile highlight-indentation wgrep-ag goto-chg magit-gitflow buffer-move ag monokai-alt-theme monokai-theme use-package magit color-theme-sanityinc-tomorrow))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
  '(scroll-bar-mode nil)
