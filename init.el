@@ -25,6 +25,7 @@
 (setq custom-file "~/.emacs.d/emacs-customizations.el")
 (load custom-file)
 
+(savehist-mode 1)
 
 
 
