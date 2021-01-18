@@ -40,6 +40,10 @@
 )
 (use-package fish-mode :ensure t)
 
+(use-package direnv :ensure t
+ :config
+ (direnv-mode))
+
 (use-package pdf-tools :ensure t)
 (use-package dired-rsync :ensure t
   :config
