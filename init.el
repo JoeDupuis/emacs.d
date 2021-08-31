@@ -138,13 +138,27 @@
 
 (electric-pair-mode 1)
 (use-package restclient :ensure t)
-(use-package ruby-end :ensure t :hook (ruby-mode . minitest-mode)
   :bind (
 	 ("C-c C-c" . minitest-verify-single)
 	 ("C-c C-t" . minitest-verify)
 	 ("C-x C-t" . minitest-verify-all)
 	 ))
 (use-package minitest :ensure t)
+(use-package ruby-end :ensure t :hook (ruby-mode . ruby-end-mode))
+
+(use-package enh-ruby-mode
+	:ensure t
+	:defer t
+	:mode (("\\.rb\\'"       . enh-ruby-mode)
+         ("\\.ru\\'"       . enh-ruby-mode)
+				 ("\\.jbuilder\\'" . enh-ruby-mode)
+         ("\\.gemspec\\'"  . enh-ruby-mode)
+         ("\\.rake\\'"     . enh-ruby-mode)
+         ("Rakefile\\'"    . enh-ruby-mode)
+         ("Gemfile\\'"     . enh-ruby-mode)
+         ("Guardfile\\'"   . enh-ruby-mode)
+         ("Capfile\\'"     . enh-ruby-mode)
+         ("Vagrantfile\\'" . enh-ruby-mode)))
 (use-package aggressive-indent :ensure t)
 (use-package dtrt-indent :ensure t)
 (use-package rails-log-mode :ensure t :defer t)
