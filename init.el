@@ -110,7 +110,8 @@
 (use-package projectile
   :ensure t
   :init
-					;  (setq projectile-completion-system 'ivy)
+	(setq projectile-git-submodule-command nil)
+;  (setq projectile-completion-system 'ivy)
 ;  (setq projectile-project-search-path '("~/Documents/"))
 
   :config
