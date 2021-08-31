@@ -62,6 +62,7 @@
 
 (use-package magit-popup :ensure t :demand t )
 (use-package magit :ensure t :defer t :bind ("C-x g" . magit))
+(use-package forge :ensure t :after magit)
 (use-package magit-gitflow  :ensure t :hook  (magit-mode . turn-on-magit-gitflow))
 (use-package color-theme-sanityinc-tomorrow :defer t :ensure t)
 (use-package monokai-theme :defer t :ensure t)
