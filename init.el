@@ -138,12 +138,6 @@
 
 (electric-pair-mode 1)
 (use-package restclient :ensure t)
-  :bind (
-	 ("C-c C-c" . minitest-verify-single)
-	 ("C-c C-t" . minitest-verify)
-	 ("C-x C-t" . minitest-verify-all)
-	 ))
-(use-package minitest :ensure t)
 (use-package ruby-end :ensure t :hook (ruby-mode . ruby-end-mode))
 
 (use-package enh-ruby-mode
@@ -159,6 +153,22 @@
          ("Guardfile\\'"   . enh-ruby-mode)
          ("Capfile\\'"     . enh-ruby-mode)
          ("Vagrantfile\\'" . enh-ruby-mode)))
+
+
+(use-package rspec-mode :ensure t
+  :bind (:map rspec-mode-map (
+         ("C-c C-c" . rspec-verify-single)
+ 	       ("C-c C-t" . rspec-verify)
+ 	       ("C-x C-t" . rspec-verify-all)
+         )))
+(use-package minitest :ensure t
+	;; :hook (minitest-mode . ruby-mode)
+	;; :mode "_test\\.rb\\'"
+  :bind (:map minitest-mode-map (
+         ("C-c C-c" . minitest-verify-single)
+ 	       ("C-c C-t" . minitest-verify)
+ 	       ("C-x C-t" . minitest-verify-all)
+         )))
 (use-package aggressive-indent :ensure t)
 (use-package dtrt-indent :ensure t)
 (use-package rails-log-mode :ensure t :defer t)
