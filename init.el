@@ -169,12 +169,16 @@
          ("Vagrantfile\\'" . enh-ruby-mode)))
 
 
+
 (use-package rspec-mode :ensure t
   :bind (:map rspec-mode-map (
          ("C-c C-c" . rspec-verify-single)
  	       ("C-c C-t" . rspec-verify)
  	       ("C-x C-t" . rspec-verify-all)
          )))
+(add-hook 'compilation-filter-hook 'inf-ruby-auto-enter)
+(add-hook 'minitest-compilation-mode-hook (lambda () (setq truncate-lines nil)))
+(add-hook 'rspec-compilation-mode-hook (lambda () (setq truncate-lines nil)))
 (use-package minitest :ensure t
   :bind (:map minitest-mode-map (
          ("C-c C-c" . minitest-verify-single)
