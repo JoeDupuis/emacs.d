@@ -215,6 +215,8 @@
 
 (global-set-key (kbd "C-+") 'goto-line)
 
+(global-set-key (kbd "C-M-<right>") 'forward-sexp)
+(global-set-key (kbd "C-M-<left>") 'backward-sexp)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
