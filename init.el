@@ -12,7 +12,6 @@
 
 ; (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 
-
 (when (eq system-type 'darwin)
   (setq
    ns-command-modifier 'control
@@ -130,6 +129,7 @@
   :config
   (use-package projectile-rails :ensure t :config
 		(define-key projectile-rails-mode-map (kbd "C-c r") 'projectile-rails-command-map))
+
   (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
   (projectile-mode +1))
   (projectile-rails-global-mode)
