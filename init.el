@@ -140,12 +140,12 @@
 	:bind
 	("<C-tab>" . company-complete)
 	:config
-	(add-to-list 'company-backends #'company-tabnine)
+;	(add-to-list 'company-backends #'company-tabnine)
 	(setq company-idle-delay 0)
 	(setq company-show-numbers t)
 	)
 
-(use-package company-tabnine :ensure t)
+;(use-package company-tabnine :ensure t)
 (use-package company-nixos-options :ensure t)
 (use-package inf-ruby :ensure t)
 
