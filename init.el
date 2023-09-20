@@ -149,6 +149,7 @@
 (use-package company-nixos-options :ensure t)
 (use-package inf-ruby :ensure t)
 
+(use-package ruby-debug :load-path "vendor/ruby-debug")
 (electric-pair-mode 1)
 (use-package restclient :ensure t)
 (use-package ruby-end :ensure t :hook (ruby-mode . ruby-end-mode))
