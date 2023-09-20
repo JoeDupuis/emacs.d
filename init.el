@@ -40,9 +40,20 @@
 )
 (use-package fish-mode :ensure t)
 
+(use-package lsp-mode
+  :init
+  ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
+  (setq lsp-keymap-prefix "C-c l")
+  :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
+         (terraform-mode . lsp)
+         ;; if you want which-key integration
+         (lsp-mode . lsp-enable-which-key-integration))
+  :commands lsp)
+
 (use-package direnv :ensure t
  :config
  (direnv-mode))
+
 
 (use-package pdf-tools :ensure t)
 (use-package dired-rsync :ensure t
