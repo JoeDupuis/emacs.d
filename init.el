@@ -198,10 +198,10 @@
   (setq windmove-wrap-around t))
 
 (use-package buffer-move :ensure :bind
-  (("<C-S-up>" . buf-move-up)
-   ("<C-S-down>" . buf-move-down)
-   ("<C-S-left>" . buf-move-left)
-   ("<C-S-right>" . buf-move-right))
+  (("<C-s-up>" . buf-move-up)
+   ("<C-s-down>" . buf-move-down)
+   ("<C-s-left>" . buf-move-left)
+   ("<C-s-right>" . buf-move-right))
   )
 
 
