@@ -283,6 +283,21 @@
 
 (global-set-key (kbd "C-x t p") 'jd-copy-path)
 
+(setq display-buffer-alist '(("\\*Minitest"
+															(display-buffer-reuse-mode-window
+															 display-buffer-in-previous-window)
+															(inhibit-same-window . t))
+														 ("\\*rails"
+															(
+															 display-buffer-reuse-mode-window
+															 display-buffer-same-window
+															 display-buffer-in-previous-window)
+															(mode . inf-ruby-mode))
+														 )
+			)
+
+
+
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
