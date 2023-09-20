@@ -176,8 +176,6 @@
  	       ("C-x C-t" . rspec-verify-all)
          )))
 (use-package minitest :ensure t
-	;; :hook (minitest-mode . ruby-mode)
-	;; :mode "_test\\.rb\\'"
   :bind (:map minitest-mode-map (
          ("C-c C-c" . minitest-verify-single)
  	       ("C-c C-t" . minitest-verify)
