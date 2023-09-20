@@ -208,6 +208,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key (kbd "C-x RET") 'calc)
 
+(global-set-key (kbd "s-u") 'revert-buffer)
 
 (global-set-key (kbd "<f8>") 'whitespace-mode)
 (global-set-key (kbd "<f7>") 'toggle-truncate-lines)
