@@ -59,7 +59,7 @@
 
 							 )))
 
-
+(use-package go-mode :ensure t :defer t)
 (use-package magit-popup :ensure t :demand t )
 (use-package magit :ensure t :defer t :bind ("C-x g" . magit))
 (use-package forge :ensure t :after magit)
