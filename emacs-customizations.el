@@ -88,7 +88,7 @@
      (340 . "#f0c674")
      (360 . "#b5bd68")))
  '(vc-annotate-very-old-color nil)
- '(warning-suppress-log-types '((direnv)))
+ '(warning-suppress-log-types '((comp) (direnv)))
  '(warning-suppress-types '((direnv)))
  '(web-mode-auto-close-style 1)
  '(web-mode-markup-indent-offset 2)
